@@ -6,10 +6,11 @@ import { redirect } from "next/navigation";
 import { Tabs,TabsList,TabsContent,TabsTrigger } from "~/components/ui/tabs";
 import { fetchUser } from "~/lib/actions/user.actions";
 import ThreadsTab from 'components/shared/ThreadsTab'
+
 const Page = async({params} : {params:{id:string}}) =>{
    const user= await currentUser();
    if(!user) return null;
-   const userInfo = await fetchUser(params.id)
+   const userInfo = await fetchUser(params.id);
    if(!userInfo?.onboarded) redirect('/onboarded')
    return (
     <section>

@@ -26,7 +26,8 @@
     /* Path Aliases */
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": ["./src/*"],
+      // "clsx": ["node_modules/clsx/index.d.ts"],
     }
   },
   "include": [

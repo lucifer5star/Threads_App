@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Button } from "../../src/app/";
+import { Button } from "../../src/components/ui/button";
 
 interface Props {
   id: string;

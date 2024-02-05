@@ -17,7 +17,6 @@ import {zodResolver} from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import Image from "next/image";
 import { addCommentToThread } from "~/lib/actions/thread.actions";
-// import { createThread } from "~/lib/actions/thread.actions"
 
 interface Props{
     threadId: string,
